@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wink" translatesAutoresizingMaskIntoConstraints="NO" id="qxg-qm-Gp3">
+                                <rect key="frame" x="0.0" y="146" width="393" height="586"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Práctica 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwa-zA-LIt">
+                                <rect key="frame" x="0.0" y="59" width="393" height="79"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luis Angel Magaña Ocampo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bk-bu-oiu">
+                                <rect key="frame" x="0.0" y="739" width="393" height="79"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="30"/>
+                                <color key="textColor" systemColor="systemMintColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9bk-bu-oiu" firstAttribute="leading" secondItem="qxg-qm-Gp3" secondAttribute="leading" id="1Me-ea-9Uo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qxg-qm-Gp3" secondAttribute="bottom" constant="86" id="8Yj-di-4mo"/>
+                            <constraint firstItem="9bk-bu-oiu" firstAttribute="top" secondItem="qxg-qm-Gp3" secondAttribute="bottom" constant="7" id="8nD-k9-eha"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qxg-qm-Gp3" secondAttribute="trailing" id="C5c-if-O1b"/>
+                            <constraint firstItem="qxg-qm-Gp3" firstAttribute="top" secondItem="bwa-zA-LIt" secondAttribute="bottom" constant="8" id="Obv-W4-DKp"/>
+                            <constraint firstItem="bwa-zA-LIt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Xcq-5m-ke0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bwa-zA-LIt" secondAttribute="trailing" id="fSf-6j-pyd"/>
+                            <constraint firstItem="9bk-bu-oiu" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jLW-B8-qdK"/>
+                            <constraint firstItem="qxg-qm-Gp3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pdG-5s-NKb"/>
+                            <constraint firstItem="9bk-bu-oiu" firstAttribute="trailing" secondItem="qxg-qm-Gp3" secondAttribute="trailing" id="quy-hM-urf"/>
+                            <constraint firstItem="bwa-zA-LIt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tbU-TC-mK0"/>
+                            <constraint firstItem="qxg-qm-Gp3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="87" id="uO0-27-oPm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="wink" width="256" height="256"/>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
