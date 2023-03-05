@@ -25,7 +25,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     override func viewWillAppear(_ animated: Bool) {
         if InternetMonitor.instance.internetStatus {
-            if let laURL = URL(string:"http://janzelaznog.com/DDAM/iOS/drinksimages/") {
+            if let laURL = URL(string:"http://janzelaznog.com/DDAM/iOS/drinksimages/\(cocktail?.img ?? "1.jpg")") {
                 // Implementación de descarga en background con URLSession
                 //1. Establecemos la configuracion para la sesión o usamos la basica
                 let configuration = URLSessionConfiguration.ephemeral
@@ -48,31 +48,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             }
         }
     }
-    
-    /*override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        if let objetoUW = cocktail{
-            let stringURL = objetoUW.img
-            guard let url = URL(string: stringURL) else {return}
-            let configuration = URLSessionConfiguration.default
-            let session = URLSession(configuration: configuration)
-            let request = URLRequest(url: url)
-            let task = session.dataTask(with: request){data, response, error in
-                if error == nil{
-                    guard let data = data else {return}
-                    DispatchQueue.main.async {
-                        self.name.text = objetoUW.name
-                        self.ingredientes.text = objetoUW.ingredients
-                        self.preparacion.text = objetoUW.directions
-                        self.img.image = UIImage(data: data)
-                    }
-                }
-            }
-            task.resume()
-        }
-    }*/
-    
-    
     
 
     @IBAction func tomarFoto(_ sender: UIButton) {
